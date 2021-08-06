@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <body>
+    <h1>Hearthstone Access</h1>
+
+    <h2>Table of Contents</h2>
+    <ul>
+      <li>
+        <a href="#1">1. Introduction</a>
+      </li>
+      <li>
+        <a href="#2">2. Getting started</a>
+        <ul>
+          <li>
+            <a href="#2.1">2.1. Installing Hearthstone</a>
+          </li>
+          <li>
+            <a href="#2.2">2.2. Patching Hearthstone for Accessibility</a>
+            <ul>
+              <li>
+                <a href="#2.2.1">2.2.1. Patching Hearthstone using the patcher</a>
+              </li>
+              <li>
+                <a href="#2.2.2">2.2.2. Patching Hearthstone manually</a>
+              </li>
+              <li>
+                <a href="#2.2.3">2.2.3. Keeping Hearthstone Access updated</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#3">3. Commands</a>
+        <ul>
+          <li>
+            <a href="#3.1">3.1. Global commands</a>
+          </li>
+          <li>
+            <a href="#3.2">3.2. Navigating menus</a>
+          </li>
+          <li>
+            <a href="#3.3">3.3. Playing the game</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#4">4. Contributing</a>
+      </li>
+    </ul>
+
+    <h2 id="1">1. Introduction</h2>
+
+    <p>Hearthstone is a popular free-to-play online digital card game developed by Blizzard Entertainment. The game is a turn-based card game between two opponents and features characters and elements from the Warcraft series. Hearthstone was first released in 2014 and still has millions of players all around the world.</p>
+
+    <p>Hearthstone Access is a custom Hearthstone mod built by Guide Dev that makes Hearthstone accessible for visually impaired screen-reader users who wouldn't otherwise be able to enjoy the game. For the time being, you can:</p>
+
+    <ul>
+      <li>Play through a fully accessible tutorial composed of 6 games to learn how to play</li>
+      <li>Play practice games against AI opponents in order to unlock all 10 classes and their basic decks</li>
+      <li>Use any of the 10 different classes in practice games to unlock all basic cards as you level up</li>
+      <li>Unlock expert-level AI opponents by defeating all normal opponents</li>
+      <li>Play practice games against expert-level AI opponents to get familiar with all the classes and game mechanics</li>
+    </ul>
+
+    <p>Once you've gone through all of this, you'll probably want to move on to other things such as building your own decks, playing against other players or going through Hearthstone's solo adventures to learn more about the lore of Warcraft. While these things aren't available yet, I do intend to work on them if there's enough interest.</p>
+
+    <p>For the time being, you can only play Hearthstone Access if you're using Windows and if you install the english version of Hearthstone - preferably American english - as other languages aren't supported. Note that while most popular screen readers should be compatible, Hearthstone Access was fully developed and tested using NVDA. If the game is unable to detect your screenreader for some reason, it will fall back to using Microsoft's Speech API.</p>
+
+    <h2 id="2">2. Getting started</h2>
+
+    <p>Blizzard games are installed and updated through their own launcher called Battle.net. In order to play, you must first install Hearthstone and patch it using Hearthstone Access afterwards.</p>
+
+    <h3 id="2.1">2.1. Installing Hearthstone</h3>
+    <ol>
+      <li>
+        Create a Battle.net account on <a href="https://account.battle.net/creation">Blizzard's Battle.net website</a>
+      </li>
+      <li>
+        Download and install Battle.net from <a href="https://www.blizzard.com/en-us/download">Blizzard's download page</a>
+      </li>
+      <li>
+        Launch Battle.net on your computer, log in with your new account and use the Battle.net launcher to download and install Hearthstone. Make sure you install the english version of the game as other languages are not supported at the moment
+      </li>
+      <li>
+        Wait for Hearthstone to fully be downloaded and updated. Feel free to launch the game once and close it immediately to ensure it has been installed. Keep in mind you will have to close the window itself if you do so since Hearthstone is not accessible at all by default
+      </li>
+    </ol>
+
+    <h3 id="2.2">2.2. Patching Hearthstone for Accessibility</h3>
+
+    <p>The easiest way to patch Hearthstone is to use the Hearthstone Access accessible patcher which automatically finds your Hearthstone installation and patches the game. However, although the code is open source, you may not feel comfortable running unknown programs in your computer. If so, please use the manual process described further down.</p>
+
+    <h4 id="2.2.1">2.2.1. Patching Hearthstone using the patcher</h4>
+
+    <ol>
+    <li>
+      Download the latest Hearthstone Access patcher named HearthstoneAccess.zip file from <a href="https://github.com/HearthstoneAccess/Patcher/releases">github</a> and extract the zip file into a convenient location
+    </li>
+    <li>
+      Run HearthstoneAccess.exe and follow the accessible dialogs using your screen reader to patch Hearthstone. Note that patching the game may take somewhere between one second and a couple of minutes depending on how fast your internet connection is
+    </li>
+    <li>
+      Launch Hearthstone normally and enjoy the game!
+    </li>
+    </ol>
+
+    <h4 id="2.2.2">2.2.2. Patching Hearthstone manually</h4>
+
+    <ol>
+    <li>
+      Find your installed version of Hearthstone using the Battle.net launcher. The version number can be found below the play button and looks something like 21.0.0.88998
+    </li>
+    <li>
+      Find your Hearthstone installation folder. This is normally under "Program Files (x86)\Hearthstone"
+    </li>
+    <li>
+      Download the latest available patch.zip file for your Hearthstone version from <a href="https://github.com/HearthstoneAccess/HearthstoneAccess/releases">github</a>
+    </li>
+    <li>
+      Extract the downloaded patch.zip file into your Hearthstone installation folder and overwrite any existing files.
+    </li>
+    <li>
+      Launch Hearthstone normally and enjoy the game!
+    </li>
+    </ol>
+
+    <h4 id="2.2.3">2.2.3. Keeping Hearthstone Access updated</h4>
+
+    <p>Whenever Blizzard patches Hearthstone or releases a new expansion, your game will automatically update and your version of Hearthstone will no longer be accessible until you patch it again. This normally happens every other week and I do have to update and release a new version of Hearthstone Access when it does, so you may have to wait a few hours depending on how complex the update was and on how busy I am at the time.</p>
+
+    <p>If you're using the patcher, all you need to do is run HearthstoneAccess.exe again and everything will be handled automatically for you. If you're doing it manually, you'll have to follow the manual process again using the new version.</p>
+
+    <h2 id="3">3. Commands</h2>
+
+    <p>New players are encouraged to simply launch the game and progress through the tutorial, as most commands will be taught as you play. If you've played Hearthstone in the past before becoming visually impaired, you should still start by creating a new account just so you can go through the tutorial again. While you may already know the rules, you'll still need to learn how to play using a screen-reader and keyboard commands. Once you've finished the tutorial, feel free to go back to your old account and pick up where you left off.</p>
+
+    <h3 id="3.1">3.1. Global commands</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>Open game menu</td>
+          <td>Escape</td>
+        </tr>
+        <tr>
+          <td>Get help</td>
+          <td>F1</td>
+        </tr>
+        <tr>
+          <td>Toggle Accessibility to allow sighted users to control the game</td>
+          <td>F8</td>
+        </tr>
+        <tr>
+          <td>Decrease game speed so opponents play slower</td>
+          <td>F11</td>
+        </tr>
+        <tr>
+          <td>Increase game speed so opponents play faster</td>
+          <td>F12</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="3.2">3.2. Navigating menus</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>Read previous option</td>
+          <td>upArrow</td>
+        </tr>
+        <tr>
+          <td>Read next option</td>
+          <td>downArrow</td>
+        </tr>
+        <tr>
+          <td>Confirm option</td>
+          <td>Enter</td>
+        </tr>
+        <tr>
+          <td>Go back</td>
+          <td>Backspace</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="3.3">3.3. Playing the game</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>Read next card in zone</td>
+          <td>rightArrow</td>
+        </tr>
+        <tr>
+          <td>Read previous card in zone</td>
+          <td>leftArrow</td>
+        </tr>
+        <tr>
+          <td>Read next card line</td>
+          <td>downArrow</td>
+        </tr>
+        <tr>
+          <td>Read previous card line</td>
+          <td>upArrow</td>
+        </tr>
+        <tr>
+          <td>Repeat current card line</td>
+          <td>Shift+upArrow</td>
+        </tr>
+        <tr>
+          <td>Read card to end</td>
+          <td>Shift+downArrow</td>
+        </tr>
+        <tr>
+          <td>Read next valid play</td>
+          <td>Tab</td>
+        </tr>
+        <tr>
+          <td>Read previous valid play</td>
+          <td>Shift+Tab</td>
+        </tr>
+        <tr>
+          <td>Play card</td>
+          <td>Enter</td>
+        </tr>
+        <tr>
+          <td>Cancel current action</td>
+          <td>Backspace</td>
+        </tr>
+        <tr>
+          <td>End turn</td>
+          <td>e</td>
+        </tr>
+        <tr>
+          <td>End turn without asking for confirmation if more valid plays exist</td>
+          <td>Shift+e</td>
+        </tr>
+        <tr>
+          <td>See how much mana you have</td>
+          <td>a</td>
+        </tr>
+        <tr>
+          <td>See how much mana your opponent has</td>
+          <td>Shift+a</td>
+        </tr>
+        <tr>
+          <td>Look at your hand</td>
+          <td>c</td>
+        </tr>
+        <tr>
+          <td>Count the cards in your opponent's hand</td>
+          <td>Shift+c</td>
+        </tr>
+        <tr>
+          <td>Look at your minions</td>
+          <td>b</td>
+        </tr>
+        <tr>
+          <td>Look at your opponent's minions</td>
+          <td>Shift+b</td>
+        </tr>
+        <tr>
+          <td>Look at your Hero</td>
+          <td>v</td>
+        </tr>
+        <tr>
+          <td>Look at your opponent's Hero</td>
+          <td>f</td>
+        </tr>
+        <tr>
+          <td>Send all your minions to attack your opponent's Hero</td>
+          <td>Shift+f</td>
+        </tr>
+        <tr>
+          <td>Look at your Hero Power</td>
+          <td>r</td>
+        </tr>
+        <tr>
+          <td>Look at your opponent's Hero Power</td>
+          <td>Shift+r</td>
+        </tr>
+        <tr>
+          <td>Look at your weapon</td>
+          <td>w</td>
+        </tr>
+        <tr>
+          <td>Look at your opponent's weapon</td>
+          <td>Shift+w</td>
+        </tr>
+        <tr>
+          <td>Look at your secrets</td>
+          <td>s</td>
+        </tr>
+        <tr>
+          <td>Look at your opponent's secrets</td>
+          <td>Shift+s</td>
+        </tr>
+        <tr>
+          <td>Count the cards in your deck</td>
+          <td>d</td>
+        </tr>
+        <tr>
+          <td>Count the cards in your opponent's deck</td>
+          <td>Shift+d</td>
+        </tr>
+        <tr>
+          <td>Get more information about a focused card's abilities</td>
+          <td>i</td>
+        </tr>
+        <tr>
+          <td>Open the play history log</td>
+          <td>y</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="4">4. Contributing</h2>
+
+    <p>Hearthstone Access is and always will be free to use. However, developing new features while keeping up with Blizzard patches and expansions requires significant time and effort. If you enjoy the game and would like to support this and other initiatives, I'm currently accepting <a href="https://www.paypal.com/biz/fund?id=FMBEHPPYV2MS4"> one-time donations on PayPal</a> and <a href="https://www.patreon.com/guidedev"> sponsors on Patreon.</a></p>
+
+  </body>
+</html>
