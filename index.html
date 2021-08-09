@@ -45,7 +45,13 @@
         </ul>
       </li>
       <li>
-        <a href="#4">4. Contributing</a>
+        <a href="#4">4. Known issues</a>
+      </li>
+      <li>
+        <a href="#5">5. Frequently asked questions</a>
+      </li>
+      <li>
+        <a href="#6">6. Contributing</a>
       </li>
     </ul>
 
@@ -80,7 +86,7 @@
         Download and install Battle.net from <a href="https://www.blizzard.com/en-us/download">Blizzard's download page</a>
       </li>
       <li>
-        Launch Battle.net on your computer, log in with your new account and use the Battle.net launcher to download and install Hearthstone. Make sure you install the english version of the game as other languages are not supported at the moment
+        Launch Battle.net on your computer, log in with your new account and use the Battle.net launcher to download and install Hearthstone. Make sure you install the english version of the game for the best experience
       </li>
       <li>
         Wait for Hearthstone to fully be downloaded and updated. Feel free to launch the game once and close it immediately to ensure it has been installed. Keep in mind you will have to close the window itself if you do so since Hearthstone is not accessible at all by default
@@ -313,7 +319,61 @@
       </tbody>
     </table>
 
-    <h2 id="4">4. Contributing</h2>
+    <h2 id="4">4. Known issues</h2>
+
+    <h3 id="4.1">4.1. I'm stuck in the end game screen after finishing a game</h3>
+
+    <p>I got a few complaints about this happening once or twice to a few people. However, I'm not sure this is an issue with the mod itself given that a few sighted players have mentioned it happening to them as well occasionally.</p>
+
+    <p>If you run into this, press F8 to disable accessibility and click somewhere on the screen with your left mouse button. If it works, press F8 again to reenable accessibility and carry on. If it doesn't work, the problem is most likely a bug in Hearthstone itself and you will need to restart the game. Note that you won't lose anything by restarting the game. You may miss out on reading some rewards if you leveled up, but they will be added to your collection regardless.</p>
+
+    <h3 id="4.2">4.2. I'm stuck in the summon at the right and summon at the left</h3>
+
+    <p>Two players so far have reported an issue where they couldn't summon a minion when they already had one in the battlefield. While I haven't been able to reproduce the issue myself, one potential fix is to simply toggle fullscreen mode off. You can do this by pressing Escape and navigating the options menu.</p>
+
+    <p>If this happens to you, I would appreciate it if you could send me a video or a few screenshots demonstrating the issue.</p>
+
+    <h2 id="5">5. Frequently asked questions</h2>
+
+    <h3 id="5.1">5.1. Will I get banned due to using patched files?</h3>
+
+    <p>I can't really answer for Blizzard. Patching games is a bit of a grey area and you should always do so at your own risk. However, I sincerely hope people are generally ok with it given that it doesn't provide anyone with an unfair advantage. If anything, it helps counter the unfair disadvantage many gamers unfortunately have.</p>
+
+    <p>I wish I could do it any other way but it's simply not possible. A patch was the only viable option I could find and I hope that the fact that the code for the patch itself is open source provides enough transparency for people to be comfortable with it.</p>
+
+    <p>I'm happy to work something out with Blizzard to verify the patches if needed. I'd be a lot happier if someone from Blizzard simply took the code and used it to implement accessibility into the game itself though. If anyone who works there happens to be looking for a cool hackathon idea, consider this my suggestion.</p>
+
+    <h3 id="5.2">5.2. Won't people be able to use this to create bots?</h3>
+
+    <p>I'm not sure where this came from but I was asked to address it. Using Hearthstone Access to create a bot would be at least 100 times harder and produce a significantly weaker bot than simply reading log files and performing mouse clicks or writing a Hearthstone Deck Tracker plugin to do it.</p>
+
+    <p>Creating a capable bot for a game such as Hearthstone is extremely complex and a good AI research topic. Creating a bot capable of constructing a board with the speech this mod outputs is a good PhD thesis.</p>
+
+    <p>Keep in mind that the challenge of writing a bot has nothing to do with being able to control the game using the mouse or keyboard commands. Making the game controllable with the keyboard is a couple of hours type of work. Making a decent bot is a couple of years type of work.</p>
+
+    <h3 id="5.3">5.3. Is this mod free?</h3>
+
+    <p>Yes! Hearthstone Access is and always will be free to use.</p>
+
+    <h3 id="5.4">5.4. Do patrons and donators get any extra perks?</h3>
+
+    <p>Hearthstone Access is free for everyone and updates will be released for everyone at the same time. Patrons and donators don't get any exclusive perks. They simply support me so I can dedicate more time to working on these initiatives.</p>
+
+    <h3 id="5.5">5.5. Can languages other than english be made available?</h3>
+
+    <p>This is a popular request and various gamers have volunteered to provide translations. I need to do some work to support this but I will set something up for people to contribute their own languages eventually.</p>
+
+    <p>Note that many gamers have successfully been running localized versions of the game. Most speeches will simply be a bit weird since you'll hear a mix of english with your native language.</p>
+
+    <h3 id="5.6">5.6. When will x feature be available?</h3>
+
+    <p>I'll use the feedback from the community to decide which features to work on next and provide regular updates on twitter and patreon whenever I start working on something new. Keep in mind this is a side project and while I'll try my best to deliver new features in a timely manner, progress will be limited to my availability.</p>
+
+    <h3 id="5.7">5.7. Will other operating systems be supported?</h3>
+
+    <p>I currently have no plans on supporting other operating systems as my availability is limited enough as it is and Windows is by far the most popular choice among visually impaired people.</p>
+
+    <h2 id="6">6. Contributing</h2>
 
     <p>Hearthstone Access is and always will be free to use. However, developing new features while keeping up with Blizzard patches and expansions requires significant time and effort. If you enjoy the game and would like to support this and other initiatives, I'm currently accepting <a href="https://www.paypal.com/biz/fund?id=FMBEHPPYV2MS4">one-time donations on PayPal</a> and <a href="https://www.patreon.com/guidedev">patrons on Patreon.</a></p>
 
