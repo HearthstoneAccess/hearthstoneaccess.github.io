@@ -68,14 +68,14 @@
       <li>Play through a fully accessible tutorial composed of 6 games to learn how to play</li>
       <li>Play practice games against AI opponents in order to unlock all 10 classes and their basic decks</li>
       <li>Use any of the 10 different classes in practice games to unlock all basic cards as you level up</li>
-      <li>Unlock expert-level AI opponents by defeating all normal opponents</li>
+      <li>Build standard decks for any class you've unlocked</li>
       <li>Play practice games against expert-level AI opponents to get familiar with all the classes and game mechanics</li>
       <li>Play the first two adventures of Book of Heroes which cover the story of Jaina and Rexxar</li>
     </ul>
 
-    <p>Once you've gone through all of this, you'll probably want to move on to other things such as building your own decks, playing against other players or going through Hearthstone's solo adventures to learn more about the lore of Warcraft. While these things aren't available yet, I do intend to work on them if there's enough interest.</p>
+    <p>Once you've gone through all of this, you'll probably want to move on to other things such as playing against other players or going through Hearthstone's solo adventures to learn more about the lore of Warcraft. While these things aren't available yet, I do intend to work on them if there's enough interest. In the meantime, several players have successfully been using OCR to access other areas of the game and created Golden Cursor scripts for NVDA players who would like to use them. You can find these in the FAQ section.</p>
 
-    <p>For the time being, you can only play Hearthstone Access if you're using Windows. If you understand english, it's highly recommended that you use the english version of the game as other languages aren't officially supported and are still being localized by contributors. Note that while most popular screen readers appear to be compatible, Hearthstone Access was fully developed and tested using NVDA. If the game is unable to detect your screenreader for some reason, it will fall back to using Microsoft's Speech API.</p>
+    <p>For the time being, you can only play Hearthstone Access if you're using Windows. If you understand english, it's highly recommended that you use the english version of the game as other languages aren't officially supported. However, Polish, Spanish and Brazilian Portuguese are now available and other languages are being localized by contributors. Note that while most popular screen readers appear to be compatible, Hearthstone Access was fully developed and tested using NVDA. If the game is unable to detect your screenreader for some reason, it will fall back to using Microsoft's Speech API.</p>
 
     <h2 id="2">2. Getting started</h2>
 
@@ -341,11 +341,9 @@
 
     <h3 id="4.2">4.2. I'm stuck in the summon at the right and summon at the left</h3>
 
-    <p>Only 3 players have reported this so far, so it seems to be a very rare issue. In any case, this issue happens when the game window is extremely thin. As an example: if you think of a normal 1080p resolution, the game window would have a width of 1920 pixels and a height of 1080 pixels. If this is happening to you, it means your game window somehow has a width of about 200 pixels even if the height is 1080. With a window like this, the board doesn't fit on the screen so the game is unplayable even for sighted players.</p>
+    <p>Only 3 players have reported this so far, so it seems to be a very rare issue. In any case, this issue happens either when the game window is extremely thin or the screen is in portrait mode instead of landscape. As an example: if you think of a normal 1080p resolution, the game window would have a width of 1920 pixels and a height of 1080 pixels. If this is happening to you, it means your game window somehow has a width of about 200 pixels even if the height is 1080. With a window like this, the board doesn't fit on the screen so the game is unplayable even for sighted players.</p>
 
-    <p>The solution is simply to fix the game window proportions. Toggling fullscreen on and off in the game menu normally fixes the window. If not, you may have to toggle fullscreen off and resize the window manually or maximize it. Note that you can reach the game menu by pressing Escape.</p>
-
-    <p>It's also worth noting that Hearthstone in general does a good job at making sure the window size is consistent and playable. While I don't know for sure, this issue may be related to some other software you're running on your computer that's interfering with the window sizes or even some rare edge case for players who don't use monitors.</p>
+    <p>The solution is simply to fix the game window proportions by changing to landscape mode or adjusting the resolution depending on what the underlying issue is. Note that you can reach the game menu by pressing Escape if you need to change the resolution.</p>
 
     <h2 id="5">5. Frequently asked questions</h2>
 
@@ -373,9 +371,11 @@
 
     <p>Hearthstone Access is free for everyone and updates will be released for everyone at the same time. Patrons and donators don't get any exclusive perks. They simply support me so I can dedicate more time to working on these initiatives.</p>
 
-    <h3 id="5.5">5.5. Can languages other than english be made available?</h3>
+    <h3 id="5.5">5.5. Can other languages be made available?</h3>
 
-    <p>While english is the only officially supported language, several people have volunteered to localize the mod to other languages and some are now in the testing phase. If you'd like to contribute, you can find more details <a href="https://github.com/HearthstoneAccess/Localization">here.</a>
+    <p>Absolutely. While english is the only officially supported language, several people have volunteered to localize the mod to other languages.</p>
+
+    <p>At the moment, Polish, European Spanish, Mexican Spanish and Brazilian Portuguese are all available due to the awesome contributions of Nuno, Alisson, pildain, AAyoubelbakhti and sanslash332. If you'd like to contribute, you can find more details <a href="https://github.com/HearthstoneAccess/Localization">here.</a>
 
     <p>Note that even if no one has localized the mod into your particular language, many gamers have successfully been playing localized versions of the game. Most speeches will simply be a bit weird since you'll hear a mix of english with your native language.</p>
 
@@ -383,7 +383,13 @@
 
     <p>I'll use the feedback from the community to decide which features to work on next and provide regular updates on twitter and patreon whenever I start working on something new. Keep in mind this is a side project and while I'll try my best to deliver new features in a timely manner, progress will be limited to my availability.</p>
 
-    <h3 id="5.7">5.7. Will other operating systems be supported?</h3>
+    <h3 id="5.7">5.7. Where can I find the Golden Cursor scripts?</h3>
+
+    <p>Niki, Lirin and blindndangerous maintain a file for 1920x1080 resolution <a href="https://keybase.pub/tniki/hearthstone.gc">here.</a></p>
+
+    <p>Druidah and LordLuceus also maintain a file for 1366x768 resolution but it's not available online. All maintainers can be reached on Discord though and are generally happy to help.</p>
+
+    <h3 id="5.8">5.8. Will other operating systems be supported?</h3>
 
     <p>I currently have no plans on supporting other operating systems as my availability is limited enough as it is and Windows is by far the most popular choice among visually impaired people.</p>
 
