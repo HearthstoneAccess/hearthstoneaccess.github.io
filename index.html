@@ -48,6 +48,9 @@
           <li>
             <a href="#3.5">3.5. Main menu shortcuts</a>
           </li>
+          <li>
+            <a href="#3.6">3.6. Battlegrounds-specific commands</a>
+          </li>
         </ul>
       </li>
       <li>
@@ -78,6 +81,7 @@
       <li>Play various solo adventures of Book of Heroes to level up your classes and unlock special card packs</li>
       <li>Use in-game gold to buy card packs and sets from the in-game shop</li>
       <li>Do quests and progress your level each season to unlock in-game rewards such as card packs and gold</li>
+	  <li>Play Battlegrounds - a completely different game and the first fully blind accessible auto battler</li>
     </ul>
 
     <p>For the time being, you can only play Hearthstone Access if you're using Windows. Note that while most popular screen readers should be compatible, Hearthstone Access was fully developed and tested using NVDA. If the game is unable to detect your screenreader for some reason, it will fall back to using Microsoft's Speech API.</p>
@@ -139,7 +143,7 @@
 
     <h4 id="2.2.3">2.2.3. Keeping Hearthstone Access updated</h4>
 
-    <p>Whenever Blizzard patches Hearthstone or releases a new expansion, your game will automatically update and your version of Hearthstone will no longer be accessible until you patch it again. This normally happens every other week and I do have to update and release a new version of Hearthstone Access when it does, so you may have to wait a few hours depending on how complex the update was and on how busy I am at the time.</p>
+    <p>Whenever Blizzard patches Hearthstone or releases a new expansion, your game will automatically update and your version of Hearthstone will no longer be accessible until you patch it again. This normally happens every other week and I do have to update and release a new version of Hearthstone Access when it does, so you may have to wait anywhere from a few hours to a few days depending on how complex the update was and on how busy I am at the time.</p>
 
     <p>If you're using the patcher, all you need to do is run HearthstoneAccess.exe again and everything will be handled automatically for you. If you're doing it manually, you'll have to follow the manual process again using the new version.</p>
 
@@ -418,6 +422,108 @@
           <td>Open Modes</td>
           <td>m</td>
         </tr>
+        <tr>
+          <td>Battlegrounds</td>
+          <td>b</td>
+        </tr>
+      </tbody>
+    </table>
+	
+	<h3 id="3.6">3.6. Battlegrounds-specific commands</h3>
+	<table>
+      <tbody>
+        <tr>
+          <td>Read tavern tier</td>
+          <td>t</td>
+        </tr>
+        <tr>
+          <td>Upgrade tavern (reads cost and requires confirmation)</td>
+          <td>u</td>
+        </tr>
+		<tr>
+          <td>Upgrade tavern (without confirmation)</td>
+          <td>Shift+u</td>
+        </tr>
+		<tr>
+          <td>Freeze/unfreeze tavern (reads cost if any and requires confirmation)</td>
+          <td>f</td>
+        </tr>
+		<tr>
+          <td>Freeze/unfreeze tavern (without confirmation)</td>
+          <td>Shift+f</td>
+        </tr>
+		<tr>
+          <td>Refresh tavern (reads cost if any and requires confirmation)</td>
+          <td>r</td>
+        </tr>
+		<tr>
+          <td>Refresh tavern (without confirmation)</td>
+          <td>Shift+r</td>
+        </tr>
+		<tr>
+          <td>Read Hero Power</td>
+          <td>p</td>
+        </tr>
+		<tr>
+          <td>Read buddy meter and Hero Buddy card</td>
+          <td>d</td>
+        </tr>
+		<tr>
+          <td>Buy/sell minion (requires confirmation)</td>
+          <td>Enter</td>
+        </tr>
+		<tr>
+          <td>Reorder minion (lift-off)</td>
+          <td>Space</td>
+        </tr>
+		<tr>
+          <td>Reorder minion (after lift-off)</td>
+          <td>leftArrow, rightArrow, home, end, number keys</td>
+        </tr>
+		<tr>
+          <td>Read my stats on leaderboard (backspace to stop reading leaderboard)</td>
+          <td>m</td>
+        </tr>
+		<tr>
+          <td>Quickly read my stats on leaderboard without losing focus</td>
+          <td>Shift+m</td>
+        </tr>
+		<tr>
+          <td>Read next opponent's stats on leaderboard (backspace to stop reading leaderboard)</td>
+          <td>n</td>
+        </tr>
+		<tr>
+          <td>Quickly read next opponent's stats on leaderboard without losing focus</td>
+          <td>Shift+n</td>
+        </tr>
+		<tr>
+          <td>Read leaderboard (backspace to stop reading)</td>
+          <td>l</td>
+        </tr>
+		<tr>
+          <td>Read minion families/races in current game. Note: works during Hero selection as well</td>
+          <td>o</td>
+        </tr>
+		<tr>
+          <td>Read number of seconds left during Recruit Phase</td>
+          <td>e</td>
+        </tr>
+		<tr>
+          <td>Read minions for sale</td>
+          <td>g</td>
+        </tr>
+		<tr>
+          <td>Read hand</td>
+          <td>c</td>
+        </tr>
+		<tr>
+          <td>Read secrets</td>
+          <td>s</td>
+        </tr>
+		<tr>
+          <td>Read gold</td>
+          <td>a</td>
+        </tr>
       </tbody>
     </table>
 
@@ -431,7 +537,7 @@
 
     <h3 id="4.2">4.2. I'm stuck in the summon at the right and summon at the left</h3>
 
-    <p>Only 3 players have reported this so far, so it seems to be a very rare issue. In any case, this issue happens either when the game window is extremely thin or the screen is in portrait mode instead of landscape. As an example: if you think of a normal 1080p resolution, the game window would have a width of 1920 pixels and a height of 1080 pixels. If this is happening to you, it means your game window somehow has a width of about 200 pixels even if the height is 1080. With a window like this, the board doesn't fit on the screen so the game is unplayable even for sighted players.</p>
+    <p>This is a very rare issue which happens either when the game window is extremely thin or the screen is in portrait mode instead of landscape. As an example: if you think of a normal 1080p resolution, the game window would have a width of 1920 pixels and a height of 1080 pixels. If this is happening to you, it means your game window somehow has a width of about 200 pixels even if the height is 1080. With a window like this, the board doesn't fit on the screen so the game is unplayable even for sighted players.</p>
 
     <p>The solution is simply to fix the game window proportions by changing to landscape mode or adjusting the resolution depending on what the underlying issue is. Note that you can reach the game menu by pressing Escape if you need to change the resolution.</p>
 
@@ -462,12 +568,11 @@
     <p>Absolutely. While English is the only officially supported language, several people have volunteered to localize the mod to other languages.</p>
 
     <p>At the moment, Polish, European Spanish, Mexican Spanish, Brazilian Portuguese, Chinese, Thai, French, German, Korean and Russian are all available due to the awesome contributions of several players. If you'd like to contribute, you can find more details <a href="https://github.com/HearthstoneAccess/Localization">here.</a>
-
     <p>Note that even if no one has localized the mod into your particular language, many gamers have successfully been playing localized versions of the game. Most speeches will simply be a bit weird since you'll hear a mix of english with your native language.</p>
 
     <h3 id="5.5">5.5. When will x feature be available?</h3>
 
-    <p>I'll use the feedback from the community to decide which features to work on next. Keep in mind this is a side project and while I'll try my best to deliver new features in a timely manner, progress will be limited to my availability.</p>
+    <p>Hearthstone Access is a side project and while I'd like all game modes to be accessible, doing so while keeping up with Blizzard patches to ensure everything keeps working is a huge effort and extremely time consuming. Please enjoy the game modes and features that have been made available rather than dreaming about new modes.</p>
 
     <h3 id="5.6">5.6. Where can I find the Golden Cursor scripts?</h3>
 
